@@ -1,5 +1,5 @@
 
-# FastAPI Tortoise UserManager
+# Python FastAPI Tortoise-ORM UserManager
 
 This is a simple user management system built using FastAPI, Tortoise ORM, and PostgreSQL for handling user authentication and management features.
 
@@ -31,30 +31,14 @@ This is a simple user management system built using FastAPI, Tortoise ORM, and P
      pip install -r requirements.txt
      ```
 
-4. **Set Up PostgreSQL:**
-   - Ensure that PostgreSQL is installed and running.
-   - Create a database and user for the application:
-     ```sql
-     CREATE DATABASE fastapi_user_manager;
-     CREATE USER yourusername WITH PASSWORD 'yourpassword';
-     ALTER ROLE yourusername SET client_encoding TO 'utf8';
-     ALTER ROLE yourusername SET default_transaction_isolation TO 'read committed';
-     ALTER ROLE yourusername SET timezone TO 'UTC';
-     GRANT ALL PRIVILEGES ON DATABASE fastapi_user_manager TO yourusername;
-     ```
 
-5. **Configure the Database:**
+4. **Configure the Database:**
    - Edit `app/config.py` to set your PostgreSQL connection details:
      ```python
      DATABASE_URL = "postgres://yourusername:yourpassword@localhost/fastapi_user_manager"
      ```
 
-6. **Run Database Migrations:**
-   ```bash
-   alembic upgrade head
-   ```
-
-7. **Run the Application:**
+5. **Run the Application:**
    - Start the FastAPI server:
      ```bash
      uvicorn app.main:app --reload

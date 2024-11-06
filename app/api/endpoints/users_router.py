@@ -1,5 +1,5 @@
 # app/api/endpoints/user.py
-from fastapi import APIRouter, HTTPException, Depends, status, Body
+from fastapi import APIRouter, HTTPException, Depends, status
 from app.core.dependencies import get_current_user
 from app.schemas.user_schema import (
     LoginResponse,
