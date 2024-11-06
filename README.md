@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FastAPI Tortoise UserManager</title>
-</head>
-<body>
+
     <h1>FastAPI Tortoise UserManager</h1>
     <p>This is a simple user management system built using FastAPI, Tortoise ORM, and PostgreSQL for handling user authentication and management features.</p>
 
@@ -67,5 +60,3 @@ GRANT ALL PRIVILEGES ON DATABASE fastapi_user_manager TO yourusername;</code></p
 
     <h2>License</h2>
     <p>This project is licensed under the MIT License.</p>
-</body>
-</html>
